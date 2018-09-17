@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+
+<head>
+    <script type="module" src="/hello-word/hello-word.js"></script>
+    <script type="module" src="/header-element/header-element.js"></script>
+    <script type="module" src="/form-element/form-element.js"></script>
+    <script type="module" src="/button-form/button-form.js"></script>
+    <script type="module"> import '@polymer/font-roboto/roboto.js'; </script>
+</head>
+
+<style is="custom-style">
+    html {
+        --color-success: #EFB705;
+        --color-cancel: #dadada;
+    }
+
+    body {
+        font-family: Roboto;
+    }
+
+    .content-body {
+        background: #f3f3f3;
+    }
+
+    .header-element {
+        border-bottom: 1px solid #c4c4c4;
+        margin-bottom: 3rem;
+        background: #6304BD;
+        padding: 30px 0;
+    }
+
+    .footer-form {
+        margin: 0 auto;
+        text-align: center;
+        padding: 20px 0;
+    }
+</style>
+
+<body class="content-body">
+
+    <header-element class="header-element">
+        
+    </header-element>
+    
+    <form>
+        <form-element labeltext="Nome: "></form-element>
+        <form-element labeltext="Sobrenome: "></form-element>
+        <form-element labeltext="Data de Nascimento: " type="date"></form-element>
+        <form-element labeltext="Email: " type="mail"></form-element>
+        <form-element labeltext="Telefone: " type="tel" disabled="true"></form-element>
+        <form-element labeltext="Senha: " type="password"></form-element>
+        <form-element labeltext="endereco: " type="text"></form-element>
+    </form>
+    
+    <footer class="footer-form">
+        <button-form nameclass="success">
+            <span slot="textButton">Enviar</span>
+        </button-form>
+        
+        <button-form nameclass="cancel">
+            <span slot="textButton">Cancelar</span>
+        </button-form>
+
+    </footer>
+
+</body>
+
+</html>

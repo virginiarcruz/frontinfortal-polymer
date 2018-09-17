@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@polymer/font-roboto": "^3.0.1",
+    "@polymer/polymer": "^3.0.5"
+  }
+}
